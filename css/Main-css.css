@@ -17,7 +17,7 @@
 
   /* colors */
   --footer-bg: rgba(179, 178, 178, 0.568);
-  --border-color:rgba(179, 178, 178, 0.856);
+  --border-color: rgba(179, 178, 178, 0.856);
   --color-white: #fff;
   --grey-light: #b1aeae;
   --primary-color: #5e5d5d;
@@ -29,15 +29,15 @@ html {
   font-size: 62.5%; /*10px(10px/16px)*/
 }
 body {
-  font-family: "nunito", sans-serif;
+  font-family: 'nunito', sans-serif;
   color: var(--primary-color);
   background-color: rgba(237, 236, 232);
   font-weight: 300;
   line-height: 1.7;
 }
 
-p{
-  font-size:1.6rem;
+p {
+  font-size: 1.6rem;
 }
 li,
 a {
@@ -62,7 +62,7 @@ a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width:100%;
+  width: 100%;
   position: fixed;
 }
 
@@ -74,6 +74,7 @@ a:hover {
   grid-template-rows: 10vh;
   grid-template-columns: repeat(12, 1fr);
   padding: 1rem;
+  height: 150px;
 }
 
 .logo-container {
@@ -85,7 +86,6 @@ a:hover {
 
 .logo {
   width: 80%;
-  
 }
 
 .nav-list {
@@ -93,17 +93,18 @@ a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style-type:none;
+  list-style-type: none;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
 .nav-list-home {
-  border-bottom:2px solid var(--color-white);
+  border-bottom: 2px solid var(--color-white);
 }
 
-.nav-list-link{
-  padding:10px 20px 10px 15px;
-  font-size:1.8rem;
-  font-weight:400;
+.nav-list-link {
+  padding: 10px 20px 10px 15px;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .btn,
@@ -126,7 +127,6 @@ a:hover {
 
   display: none;
 }
-
 
 /********** Footer styles*/
 
@@ -166,9 +166,8 @@ footer {
   margin: 2px;
 }
 .footer-social,
-.footer-social:hover{
+.footer-social:hover {
   transition: 0.5s ease-in-out;
-
 }
 
 .footer-social {
@@ -179,6 +178,5 @@ footer {
 .footer-social:hover {
   width: 50px;
 }
-
 
 /* Mobile */

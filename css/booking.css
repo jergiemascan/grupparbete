@@ -4,6 +4,7 @@
   --grey-light:#f7f7f7;
   --primary-color:#5e5d5d;
   --grey-dark:#777;
+  --btn-orange:#e67e22;
 }
 
 *,
@@ -25,53 +26,14 @@ body{
   font-weight: 400;
   line-height: 1.7;
   
- }
- /*
-.nav-container{
-  not included:background-color: rgba(235, 230, 230, 0.8);
-  color: var(--color-white);
-  
-
-  font-size: 1.6rem;
-  display: grid;
-  grid-template-rows: 10vh;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 1rem;
-}
-.logo-container{
-  grid-column: 1/3;
-
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-.logo{
-  width:70%;
 }
 
-.nav-list{
-  grid-column: 5/12;
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
- 
-} */
-
-
-ul li, a {
- list-style-type: none;
- text-decoration: none;
- color: inherit; 
-
-} 
 .header-container{
   background-image:linear-gradient(to right bottom, rgba(0,0,0, .1), rgba(0,0,0, .1)), url(../booking-img/hero-2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height:100vh;
-
   position: relative;
 
 }
@@ -87,7 +49,7 @@ ul li, a {
   text-decoration: none;
   border-radius: 10rem;
   padding:1.4rem 4rem;
-  background-color:#e67e22;
+  background-color:var(--btn-orange);
   letter-spacing: 1.2px;
   transition: all .2s;
   cursor: pointer;
@@ -96,8 +58,6 @@ ul li, a {
   transform: translateY(-.1rem);
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .2);
 }
-
-
 
 /****************************************/
 /*          BOOKING SECTION             */
@@ -108,8 +68,7 @@ ul li, a {
   top:40%;
   left: 30%;
   right: 30%;
-  margin-bottom: 1rem;
-   
+  margin-bottom: 1rem;  
 }
 
 .booking-reservation{
@@ -127,7 +86,7 @@ ul li, a {
 .booking-reservation span{
   width: 10rem;
   margin-bottom:3rem;
-  border-bottom: 3px solid #e67e22;
+  border-bottom: 3px solid var(--btn-orange);
 } 
 
 .book-form{
@@ -169,23 +128,20 @@ label, input[class*="form-"],select{
   background-color:inherit;
   margin-left: 2rem;
   margin-bottom: 1rem;
-
 } 
 
-
 /****************************************/
-/*              CONTACT-OPENING HOURS    */
-/* ************************************* */
+/*        CONTACT-OPENING HOURS         */
+/* **************************************/
 
 .contact-opening{
   margin: 0 auto;
+  font-size: 1.4rem;
   display: grid;
   grid-template-rows: 60vh;
   grid-template-columns: repeat(12, 1fr);
   /* grid-template-columns: repeat(autofit, minmax(20%, 1fr)); */
-  font-size: 1.4rem;
   background-color: var(--color-white);
-
   justify-items: center;
   align-items: center;
 }
@@ -212,6 +168,16 @@ iframe{
   padding: 0 1rem;
   
 }
+/****************************************/
+/*      REFACTORABLE CODE               */
+/* **************************************/
+
+ul li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit; 
+ } 
+
 /* .clearfix,.clearfix::after{
   content: "";
   clear: both;

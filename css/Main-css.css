@@ -19,6 +19,10 @@
   --grey-light: #b1aeae;
   --primary-color: #5e5d5d;
   --grey-dark: #777;
+
+
+  /*box-shadow*/
+  --shadow-black: 0 1.5rem 2rem rgba(0,0,0, .7);
 }
 
 /***** General styling*/
@@ -55,12 +59,13 @@ a:hover {
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.1)
     ),
-    url(../img/hero-2.jpg);
+    url(../img/main-headerbg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width:100%;
-  position: fixed;
+  height: 80vh;
+  position:relative;
 }
 
 .nav-container {
@@ -111,19 +116,37 @@ a:hover {
   font-size: 1.6rem;
   text-decoration: none;
   border-radius: 10rem;
-  padding: 1.5rem 5rem;
-  background-color: rgba(250, 162, 0, 0.788);
+  padding: 2rem 3rem;
+  /* background-color: rgba(250, 162, 0, 0.788); */
+  background-color: #e67e22;/*ELLER  OVAN*/
   letter-spacing: 1.2px;
-  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-black);
   cursor: pointer;
 }
+
 .burger-btn {
   display: flex;
   width: 5%;
 
   display: none;
 }
+.header-btn{
+  position: absolute;
+  top:60%;
+  left:40%;
+  width: 50rem;
+}
 
+
+.header-meny-btn {
+  margin-right:10rem;
+}
+.header-meny-btn.btn {
+  padding: 2rem 7rem;
+}
+.header-book-btn.btn{
+  padding: 1.9rem 3.5rem;
+}
 
 /********** Footer styles*/
 

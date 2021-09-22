@@ -1,17 +1,31 @@
-header{
-    height:70px;
-    width:100%;
-    text-align: center;
-    padding-top:10px;
-}
+
 
 #main-content{
-    height:600px;
+    padding:20vh 0;
     display:grid;
     grid-template-columns:repeat(12, 1fr);
     grid-template-rows:auto;
+    row-gap:4rem;
 }
 
 .gallery-section{
-    grid-column:1/12;
+    grid-column:2/12;
+}
+
+#section-1{
+    grid-row:1/2;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#section-1 img{
+    width:60%;
+}
+#section-1 div{
+    width:35%;
+    border:2px solid gray;
+}
+
+.gallery-section-2 {
+    grid-row:2/3;
 }

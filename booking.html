@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap"rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="css/Main-css.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link rel="stylesheet" href="css/Main-css.css" />
+    <link rel="stylesheet" href="css/booking.css">
+  
     <title>Io Mangio | Taste of South Italy</title>
+    
   </head>
   <body>
     <header class="header-container">
@@ -18,12 +20,14 @@
         <div class="logo-container">
           <a href="home-index.html"><img class="logo" src="img/Logo22.png" alt="weblogo"/></a>
         </div>
+
         <ul class="nav-list">
-          <li><a class="nav-list-link nav-list-home" href="index.html">HOME</a></li>
+          <li><a class="nav-list-link nav-list-home" href="home-index.html">HOME</a></li>
           <li><a class="nav-list-link" href="menu.html">MENU</a></li>
           <li><a class="nav-list-link" href="gallery.html">GALLERY</a></li>
           <li><a class="nav-list-link" href="booking.html">BOOKING</a></li>
         </ul>
+
         <button class="burger-btn">
           <svg class="burger-open">
             <use xlink:href="img/sprite.svg#icon-menu"></use>
@@ -34,13 +38,79 @@
         </button>
       </nav>
     </header>
+    <!-- OBS ABOVE IS DEFAULT NAVIGATION -->
     
-    
-    
+    <section id="booking">
+      <h2 class="booking-reservation">Reservation <span></span></h2>   
+      <form class="book-form">
+        <h2 >Book your table here</h2>
+        <div class="fullname">
+          <label for="name" class="form-fullname">Full name:</label>
+          <input type="text" id="name" class="form-fullname" placeholder="Your full name" required>
+        </div>
+        <div class="email">
+          <label for="email"class="form-email" >E-mail:</label>
+          <input type="text" id="email" class="form-email" placeholder="Your e-mail" required>
+        </div>
+        <div class="date">
+          <label for="date"class="form-date">Date:</label>
+          <input type="date" id="date" class="form-date" required>
+        </div>
+        <div class="time">
+          <label for="time"class="form-time">Time:</label>
+          <input type="time" id="time" class="form-time" required >
+        </div>
+        
+        <div class="num-guest">
+          Number of guest:
+          <select name="guest" id="guest-option">
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="7">7 Guests</option>
+            <option value="8">8 Guests</option>
+            <option value="9">9 Guests</option>
+            <option value="10">10 Guests</option>
+          </select>
+        </div>     
+        <button type="submit" class=" btn btn-submit">Submit</button>   
+      </form>
+    </section>
+
+    <section class="contact-opening">
+      <div class="lunch-hour">
+        <h2>Lunch</h2>
+        <p>Monday to Friday <br> 11:30-14:00</p>
+      </div>
+      <div class="dinner-hour">
+        <h2>Dinner</h2>
+        <p>Tuesday to Thursday 17:00-23:00</p>
+        <p>Friday to Sunday <br>  17:00-00:00</p>
+      </div>
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <ul class="contact-details">
+          <li><h4 class="phone">Number</h4></li>
+          <li class="number">08 544 621 12</li>
+          <li><h4  class="e-post">Email</h4></li>
+          <li class="mail">lomangio@gmail.com</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="map">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65157.5576719935!2d18.1338112!3d59.313356799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1ssv!2sse!4v1632300452943!5m2!1ssv!2sse" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+    </section>
+
+    <!-- footer default-->
 
     <footer>
       <div id="footer-logo">
-       <a href="#"><img src="img/Logo22.png" alt="Picture of Io Mangio logo"></a>
+        <a href="#"><img src="img/Logo22.png" alt="Picture of Io Mangio logo"></a>
       </div>
       <div id="footer-flex">
         <div class="footer-box">
@@ -59,10 +129,17 @@
           <h4 class="footer-title">Follow us on our social media</h4>
           <div>
           <a href="#"><img class="footer-social" src="img/Facebook-Logo.png" alt="picture of facebook logo" /></a>
-          <a href="#"><img class="footer-social" src="img/Instagram-Logo.png" alt="picture of instagram logo" /></a>
+          <a href="#"><img class="footer-social" src="img/Instagram-Logo.png" alt="picture of instagram logo" /></a>     
         </div>
       </div>
     </footer>
-
+  
   </body>
 </html>
+
+
+    
+    
+    
+
+    

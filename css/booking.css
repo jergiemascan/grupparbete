@@ -1,0 +1,231 @@
+
+:root{
+  --color-white:#fff;
+  --grey-light:#f7f7f7;
+  --primary-color:#5e5d5d;
+  --grey-dark:#777;
+}
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size:62.5%;/*10px*/
+}
+body{
+  font-family: Nunito, sans-serif;
+  color:var(--primary-color);
+  /* background-color: rgba(237,236,232); */
+  background-color: #f1f2f6;
+  font-weight: 400;
+  line-height: 1.7;
+  
+ }
+ /*
+.nav-container{
+  not included:background-color: rgba(235, 230, 230, 0.8);
+  color: var(--color-white);
+  
+
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-rows: 10vh;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 1rem;
+}
+.logo-container{
+  grid-column: 1/3;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.logo{
+  width:70%;
+}
+
+.nav-list{
+  grid-column: 5/12;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+} */
+
+
+ul li, a {
+ list-style-type: none;
+ text-decoration: none;
+ color: inherit; 
+
+} 
+.header-container{
+  background-image:linear-gradient(to right bottom, rgba(0,0,0, .1), rgba(0,0,0, .1)), url(../booking-img/hero-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+
+  position: relative;
+
+}
+
+.btn,
+.btn:link,
+.btn:visited{
+  text-transform:uppercase;
+  font-weight:400;
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border-radius: 10rem;
+  padding:1.4rem 4rem;
+  background-color:#e67e22;
+  letter-spacing: 1.2px;
+  transition: all .2s;
+  cursor: pointer;
+}
+.btn:hover{
+  transform: translateY(-.1rem);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .2);
+}
+
+
+
+/****************************************/
+/*          BOOKING SECTION             */
+/* ************************************* */
+
+#booking{
+  position: absolute;
+  top:40%;
+  left: 30%;
+  right: 30%;
+  margin-bottom: 1rem;
+   
+}
+
+.booking-reservation{
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+}
+.booking-reservation span{
+  width: 10rem;
+  margin-bottom:3rem;
+  border-bottom: 3px solid #e67e22;
+} 
+
+.book-form{
+  max-width:80%;
+  height: 50vh;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  border-radius: 5px;
+  background-color: #fff;
+  /* #eeeeeea8 */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  
+}
+
+.book-form h2{ 
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+ 
+label, input[class*="form-"],select{
+  font-family: inherit;
+  font-size: inherit;
+  padding: .5rem;
+ 
+}
+#guest-option{
+  font-family: inherit;
+  font-size: inherit;
+  background-color:inherit;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+} 
+
+
+/****************************************/
+/*              CONTACT-OPENING HOURS    */
+/* ************************************* */
+
+.contact-opening{
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 60vh;
+  grid-template-columns: repeat(12, 1fr);
+  /* grid-template-columns: repeat(autofit, minmax(20%, 1fr)); */
+  font-size: 1.4rem;
+  background-color: var(--color-white);
+
+  justify-items: center;
+  align-items: center;
+}
+.lunch-hour{
+  grid-column:4/5;
+
+}
+.dinner-hour{
+  grid-column: 6/7;
+
+}
+.contact-info{
+  grid-column: 8/9;
+}
+
+
+/****************************************/
+/*              MAP                      */
+/* ************************************* */
+iframe{
+  width: 100%;
+  height: 50vh;
+  margin: 3rem 0;  
+  padding: 0 1rem;
+  
+}
+/* .clearfix,.clearfix::after{
+  content: "";
+  clear: both;
+  display: row;
+} */
+
+
+
+
+
+
+
+
+
+
+
+

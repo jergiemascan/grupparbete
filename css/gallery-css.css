@@ -1,0 +1,13 @@
+header{
+    height:70px;
+    width:100%;
+    text-align: center;
+    padding-top:10px;
+}
+
+#main-content{
+    height:600px;
+    display:grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows:auto;
+}

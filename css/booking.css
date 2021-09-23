@@ -137,25 +137,48 @@ label, input[class*="form-"],select{
 
 .contact-opening{
   margin: 0 auto;
-  font-size: 1.4rem;
   display: grid;
-  grid-template-rows: 60vh;
   grid-template-columns: repeat(12, 1fr);
-  /* grid-template-columns: repeat(autofit, minmax(20%, 1fr)); */
-  background-color: var(--color-white);
-  justify-items: center;
+  grid-template-rows: minmax(50vh,auto);
+  font-size: 1.4rem;
+  background-color: #ebe9eb;
+  /* justify-items: center; */
   align-items: center;
 }
-.lunch-hour{
-  grid-column:4/5;
-
+.opening{
+  grid-column: 3/5;
+  justify-items: center;
 }
-.dinner-hour{
-  grid-column: 6/7;
-
+.location{
+  grid-column: 6/8;
+  justify-items: center;
 }
 .contact-info{
-  grid-column: 8/9;
+  grid-column: 9/11;
+  justify-items: center;
+ }
+.contact-opening>.opening,
+.contact-opening>.location,
+.contact-opening>.contact-info{
+
+  background-color: var(--color-white);
+  display: grid;
+  height: 80%;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.icons{
+ width:5rem;
+ fill: #cb7152;
+
+}
+.icons-loc{
+  margin-bottom: 0;
+}
+.contact-details{
+  padding-bottom:5rem;
 }
 
 

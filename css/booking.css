@@ -21,8 +21,8 @@ html{
 body{
   font-family: Nunito, sans-serif;
   color:var(--primary-color);
-  /* background-color: rgba(237,236,232); */
-  background-color: #f1f2f6;
+  /* background-color: #f1f2f6; */
+  background-color: #f1f2f6c0;
   font-weight: 400;
   line-height: 1.7;
   
@@ -38,26 +38,28 @@ body{
 
 }
 
-.btn,
-.btn:link,
-.btn:visited{
+.btn2,
+.btn2:link,
+.btn2:visited{
   text-transform:uppercase;
   font-weight:400;
   color: var(--color-white);
   display: inline-block;
   font-size: 1.6rem;
   text-decoration: none;
+  border: none;
   border-radius: 10rem;
-  padding:1.4rem 4rem;
-  background-color:var(--btn-orange);
+  padding:1.4rem 3rem;
+  background-color:#e67e22;
   letter-spacing: 1.2px;
-  transition: all .2s;
+  transition: all .3s;
   cursor: pointer;
 }
-.btn:hover{
-  transform: translateY(-.1rem);
+.btn2:hover{
+  transform: translateY(-.5rem);
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .2);
 }
+
 
 /****************************************/
 /*          BOOKING SECTION             */
@@ -66,9 +68,10 @@ body{
 #booking{
   position: absolute;
   top:40%;
-  left: 30%;
-  right: 30%;
-  margin-bottom: 1rem;  
+  left: 35%;
+  right: 35%;
+  margin-bottom: 1rem;
+   
 }
 
 .booking-reservation{
@@ -109,6 +112,25 @@ body{
   
 }
 
+.book-form{
+  max-width:100%;
+  height: 50vh;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  border-radius: 5px;
+  background-color: #fff;
+  /* #eeeeeea8 */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  
+}
+
 .book-form h2{ 
   margin-bottom: 2rem;
   font-size: 2.4rem;
@@ -129,79 +151,75 @@ label, input[class*="form-"],select{
   background-color:inherit;
   margin-left: 2rem;
   margin-bottom: 1rem;
+
 } 
 
+
 /****************************************/
-/*        CONTACT-OPENING HOURS         */
-/* **************************************/
+/*              CONTACT-OPENING HOURS    */
+/* ************************************* */
 
 .contact-opening{
+  max-width: 70%;
+  min-height:60rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: minmax(50vh,auto);
-  font-size: 1.4rem;
-  background-color: #ebe9eb;
-  /* justify-items: center; */
-  align-items: center;
-}
-.opening{
-  grid-column: 3/5;
-  justify-items: center;
-}
-.location{
-  grid-column: 6/8;
-  justify-items: center;
-}
-.contact-info{
-  grid-column: 9/11;
-  justify-items: center;
- }
-.contact-opening>.opening,
-.contact-opening>.location,
-.contact-opening>.contact-info{
-
-  background-color: var(--color-white);
-  display: grid;
-  height: 80%;
-  width: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 4rem;
   text-align: center;
+  row-gap: 2rem;
+   
+}
+.contact-opening>*, .contact-opening p{
+  background-color: #fff;
+  font-size: 1.4rem;
   border-radius: 5px;
 }
 
-.icons{
- width:5rem;
- fill: #cb7152;
+.opening{
+  grid-column: 1/3;
+  grid-row: 1/3;
 
 }
-.icons-loc{
-  margin-bottom: 0;
+.location-book{
+  grid-column:4/6;
+  grid-row: 1/3;
 }
-.contact-details{
-  padding-bottom:5rem;
+.contact-info{
+  grid-column: 7/9;
+  grid-row: 1/3; 
+}
+.opening,.location-book, .contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .01);
+}
+
+
+.icons{
+  width:4rem;
+  height: 100px;
+  fill: #cb7152;
+ 
 }
 
 
 /****************************************/
 /*              MAP                      */
 /* ************************************* */
+.map{
+ margin-top: 2rem;
+}
 iframe{
   width: 100%;
-  height: 50vh;
-  margin: 3rem 0;  
-  padding: 0 1rem;
-  
+  height: 50vh;  
 }
+
 /****************************************/
-/*      REFACTORABLE CODE               */
-/* **************************************/
-
-ul li, a {
-  list-style-type: none;
-  text-decoration: none;
-  color: inherit; 
- } 
-
+/*      REFACTORABLE CODE                    */
+/* ************************************* */
 /* .clearfix,.clearfix::after{
   content: "";
   clear: both;
@@ -209,13 +227,9 @@ ul li, a {
 } */
 
 
-
-
-
-
-
-
-
-
-
-
+ul li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit; 
+ 
+ } 

@@ -132,9 +132,11 @@ a:hover {
 }
 .header-btn{
   position: absolute;
-  top:60%;
-  left:40%;
   width: 50rem;
+
+  top:60%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
 

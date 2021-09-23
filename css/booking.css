@@ -45,11 +45,11 @@ body{
   font-weight:400;
   color: var(--color-white);
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
   border: none;
   border-radius: 10rem;
-  padding:1.4rem 3rem;
+  padding:1.4rem 3.5rem;
   background-color:#e67e22;
   letter-spacing: 1.2px;
   transition: all .3s;
@@ -67,7 +67,7 @@ body{
 
 #booking{
   position: absolute;
-  top:40%;
+  top:30%;
   left: 35%;
   right: 35%;
   margin-bottom: 1rem;
@@ -75,7 +75,7 @@ body{
 }
 
 .booking-reservation{
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -88,52 +88,31 @@ body{
 }
 .booking-reservation span{
   width: 10rem;
-  margin-bottom:3rem;
+  margin-bottom:2rem;
   border-bottom: 3px solid var(--btn-orange);
 } 
 
 .book-form{
-  max-width:80%;
-  height: 50vh;
+  max-width:100%;
+  height: 55vh;
   margin: 0 auto;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--primary-color);
   border-radius: 5px;
   background-color: #fff;
-  /* #eeeeeea8 */
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 2rem;
+  gap: 1.2rem;
   padding:1rem;
   
 }
-
-.book-form{
-  max-width:100%;
-  height: 50vh;
-  margin: 0 auto;
-  font-size: 1.4rem;
-  color: var(--primary-color);
-  border-radius: 5px;
-  background-color: #fff;
-  /* #eeeeeea8 */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  
-}
-
 .book-form h2{ 
-  margin-bottom: 2rem;
-  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .5px;
@@ -160,13 +139,13 @@ label, input[class*="form-"],select{
 /* ************************************* */
 
 .contact-opening{
-  max-width: 70%;
-  min-height:60rem;
+  max-width: 120rem;
+  min-height:50rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding: 4rem;
+  padding: 5rem;
   text-align: center;
   row-gap: 2rem;
    
@@ -178,16 +157,16 @@ label, input[class*="form-"],select{
 }
 
 .opening{
-  grid-column: 1/3;
+  grid-column: 1/4;
   grid-row: 1/3;
 
 }
 .location-book{
-  grid-column:4/6;
+  grid-column:5/8;
   grid-row: 1/3;
 }
 .contact-info{
-  grid-column: 7/9;
+  grid-column: 9/-1;
   grid-row: 1/3; 
 }
 .opening,.location-book, .contact-info{
@@ -199,10 +178,14 @@ label, input[class*="form-"],select{
 
 
 .icons{
-  width:4rem;
-  height: 100px;
+  width:3rem;
+  height: 8rem;
   fill: #cb7152;
- 
+}
+.contact-opening h2{
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 
@@ -214,7 +197,7 @@ label, input[class*="form-"],select{
 }
 iframe{
   width: 100%;
-  height: 50vh;  
+  height: 60vh;  
 }
 
 /****************************************/

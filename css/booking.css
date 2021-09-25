@@ -203,7 +203,7 @@ iframe{
 }
 
 /****************************************/
-/*      REFACTORABLE CODE                    */
+/*      REFACTORABLE CODE                */
 /* ************************************* */
 /* .clearfix,.clearfix::after{
   content: "";
@@ -218,3 +218,91 @@ ul li, a {
   color: inherit; 
  
  } 
+
+/****************************************/
+/*            QUERIES                        */
+/* ************************************* */
+
+
+/* screen size max960px */
+@media screen and (max-width:60em) {
+  .contact-opening{
+    min-height:45rem;
+    padding: 6rem 1.5rem;
+  }
+  .icons{
+    height:5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* screen size max-width 720px */
+@media screen and (max-width:45em) {
+  #booking{
+    left: 20%;
+    right: 20%;
+  }
+  .btn2{
+    font-size: 1.2rem;
+    padding:1.4rem 3rem;
+  }
+  .book-form{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  } 
+  #guest-option{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  .contact-opening{
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 3rem;
+  }
+  .icons{
+    height:2.5rem;
+
+  }
+  .contact-opening>*{
+    padding: 2.5rem 1rem;
+  }
+  ul h4{
+    margin: 0;
+  }
+  
+  
+}
+
+
+/* Bigger desktop-Screen size min-1200px */
+@media screen and (min-width:75em) {
+   
+  .book-form h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .book-form{
+    font-size: 1.4rem;
+  }
+  iframe{
+    height: 60vh;  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

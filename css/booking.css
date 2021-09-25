@@ -22,7 +22,8 @@ body{
   font-family: Nunito, sans-serif;
   color:var(--primary-color);
   /* background-color: #f1f2f6; */
-  background-color: #f1f2f6c0;
+  /* background-color: #f1f2f6c0; */
+  background-color:rgba(237, 236, 232);
   font-weight: 400;
   line-height: 1.7;
   
@@ -68,10 +69,9 @@ body{
 #booking{
   position: absolute;
   top:30%;
-  left: 35%;
-  right: 35%;
-  margin-bottom: 1rem;
-   
+  left: 30%;
+  right: 30%;
+  margin-bottom: 1rem;  
 }
 
 .booking-reservation{
@@ -81,7 +81,6 @@ body{
   flex-direction: column;
   color: var(--color-white);
   justify-content: center;
-  text-align: center;
   align-items: center;
   letter-spacing: 1.5px;
   margin-bottom: 1.5rem;
@@ -122,6 +121,7 @@ label, input[class*="form-"],select{
   font-family: inherit;
   font-size: inherit;
   padding: .5rem;
+  
  
 }
 #guest-option{
@@ -133,7 +133,6 @@ label, input[class*="form-"],select{
 
 } 
 
-
 /****************************************/
 /*              CONTACT-OPENING HOURS    */
 /* ************************************* */
@@ -142,14 +141,16 @@ label, input[class*="form-"],select{
   max-width: 120rem;
   min-height:50rem;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
   padding: 5rem;
   text-align: center;
-  row-gap: 2rem;
    
 }
+
 .contact-opening>*, .contact-opening p{
   background-color: #fff;
   font-size: 1.4rem;
@@ -176,7 +177,6 @@ label, input[class*="form-"],select{
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .01);
 }
 
-
 .icons{
   width:3rem;
   height: 8rem;
@@ -184,10 +184,12 @@ label, input[class*="form-"],select{
 }
 .contact-opening h2{
   font-size: 1.6rem;
-  margin-bottom: 1rem;
   text-transform: uppercase;
+  margin: 1rem 0;
 }
-
+ul h4{
+  margin: 1.5rem 0 .5rem 0;
+}
 
 /****************************************/
 /*              MAP                      */
@@ -197,7 +199,7 @@ label, input[class*="form-"],select{
 }
 iframe{
   width: 100%;
-  height: 60vh;  
+  height: 50vh;  
 }
 
 /****************************************/

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 h1 {
   font-size: 35px;
@@ -6,7 +9,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 hr {
@@ -19,6 +22,7 @@ hr {
   font-size: 17.5px;
   font-weight: bold;
 }
+
 .main-container {
   display: grid;
   grid-template-columns: 39% 22% 39%;
@@ -49,7 +53,8 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 85%;
+  padding: 10px 0;
 }
 
 .medium-container-bottom div {
@@ -59,12 +64,13 @@ hr {
 }
 
 .medium-container-bottom h2 {
-  margin-top: 20px;
+  margin: 25px 0;
 }
 
 .medium-container-bottom span {
   font-size: 17px;
   margin: 10px 70px;
+  text-align: center;
 }
 
 .bottom-container-grid {
@@ -127,6 +133,10 @@ hr {
   width: 100%;
 }
 
+.middle-container .item {
+  min-height: 85px;
+}
+
 .h4-persons {
   padding-top: 15px;
 }
@@ -144,7 +154,7 @@ hr {
   font-weight: bolder;
   text-transform: uppercase;
   background-color: rgb(128, 0, 0);
-  margin: 50px 0 7.5px 0;
+  margin: 75px 0 7.5px 0;
 }
 
 .small-text {
@@ -165,17 +175,21 @@ hr {
 }
 
 .bottom-column h2 {
-  padding: 25px 0 0 0;
+  padding: 25px 0 15px 0;
 }
 
 .bottom-column span {
   font-size: 14px;
 }
 
+
 @media screen and (max-width: 992px) {
   .main-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .medium-container-bottom {
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -193,8 +207,8 @@ hr {
   }
   .medium-container-bottom span {
   margin: 10px;
-}
-.bottom-column div {
-  width: 80%;
-}
+  }
+  .bottom-column div {
+    width: 80%;
+  }
 }

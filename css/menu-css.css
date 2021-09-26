@@ -1,4 +1,9 @@
 
+h1 {
+  font-size: 35px;
+  padding-top: 25px;
+}
+
 h2 {
   text-align: center;
   font-size: 26px;
@@ -36,6 +41,10 @@ hr {
   height:fit-content;
 }
 
+.bottom-container h2 {
+  font-size: 25px;
+}
+
 .medium-container-bottom {
   flex-direction: column;
   align-items: center;
@@ -45,7 +54,7 @@ hr {
 
 .medium-container-bottom div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: fit-content;
 }
 
@@ -61,6 +70,7 @@ hr {
 .bottom-container-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 40px 0;
 }
 
 .h2-middle {
@@ -94,6 +104,7 @@ hr {
   margin: 10px 8px 25px 8px;
   padding-top: 25px;
   text-align: center;
+  min-height: 150px;
 }
 
 .item h3 {
@@ -101,7 +112,8 @@ hr {
   font-weight: lighter;
 }
 .item h4 {
-  font-size: 12.5px;
+  flex: 1;
+  font-size: 14px;
   font-style: italic;
   font-weight: lighter;
   margin-top: -5px;
@@ -109,12 +121,6 @@ hr {
 .item h5 {
   font-size: 17.5px;
   margin-top: 12px;
-}
-
-.item span {
-  padding: 10px;
-  margin: 20px;
-  font-size: 17px;
 }
 
 .full-width {
@@ -142,16 +148,29 @@ hr {
 }
 
 .small-text {
-  font-size: 12.5px;
+  font-size: 14px;
 }
 
-.bottom-container-grid .item {
-  justify-content: center;
+.bottom-column {
+  display: flex;
   align-items: center;
-  width: 100%;
+  flex-direction: column;
 }
 
+.bottom-column div {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  font-size: 14px;
+}
 
+.bottom-column h2 {
+  padding: 25px 0 0 0;
+}
+
+.bottom-column span {
+  font-size: 14px;
+}
 
 @media screen and (max-width: 992px) {
   .main-container {
@@ -174,5 +193,8 @@ hr {
   }
   .medium-container-bottom span {
   margin: 10px;
+}
+.bottom-column div {
+  width: 80%;
 }
 }

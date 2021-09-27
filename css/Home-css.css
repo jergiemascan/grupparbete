@@ -66,11 +66,10 @@ p{
 .container-recommended{
     border-top: solid rgba(179, 178, 178, 0.856) 1.5px;
     width: 90%;
-    height: 150px;
+    height: auto;
     margin: 100px auto;
-    padding-bottom: 50px;
     padding-top: 50px;
-text-align: center;
+    text-align: center;
 }
 
 .recommended-logo{
@@ -114,7 +113,7 @@ text-align: center;
 }
 
 /* Mobile */
-@media screen and (max-width: 700px ) {
+@media screen and (max-width: 768px ) {
    #background-container{
         height: 25px;
         background-image: none;
@@ -142,8 +141,8 @@ text-align: center;
             margin-left: 20px;
         }
         .container-recommended{
-            width: 350px;
-            height: 200px;
+            width: 100%;
+            height: auto;
         }
         
         .recommended-logo{

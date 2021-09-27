@@ -17,25 +17,27 @@
   <body>
     <header class="header-container">
       <nav class="nav-container">
+        
         <div class="logo-container">
           <a href="home-index.html"><img class="logo" src="img/Logo22.png" alt="weblogo"/></a>
         </div>
-
+        
         <ul class="nav-list">
-          <li><a class="nav-list-link " href="home-index.html">HOME</a></li>
+          <li> <a class="nav-list-link " href="home-index.html">HOME</a></li>
           <li><a class="nav-list-link" href="menu.html">MENU</a></li>
           <li><a class="nav-list-link" href="gallery.html">GALLERY</a></li>
           <li><a class="nav-list-link nav-list-home" href="booking.html">BOOKING</a></li>
-        </ul>
-
-        <button class="burger-btn">
-          <svg class="burger-open">
-            <use xlink:href="img/sprite.svg#icon-menu"></use>
-          </svg>
-          <svg class="burger-open">
-            <use xlink:href="img/sprite.svg#icon-x"></use>
-          </svg>
-        </button>
+        </ul>       
+        <div class="header-burger">
+          <div class="burger-btn">
+            <svg class="burger-icon burger-open">
+              <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
+            <svg class="burger-icon burger-x">
+              <use xlink:href="img/sprite.svg#icon-x"></use>
+            </svg>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- OBS ABOVE IS DEFAULT NAVIGATION AND HEADER NEVER TOUCH IT ANYMORE-->
@@ -87,12 +89,15 @@
             <use xlink:href="booking-img/sprite.svg#icon-stopwatch"></use>
           </svg>
           <h2>Lunch</h2>
-          <p>Monday - Friday <br> 11:30-14:00</p>
+          <p>Monday - Friday</p>
+          <p>11:30-14:00</p>
         </div>
         <div class="dinner-hour">
           <h2>Dinner</h2>
-          <p>Tuesday - Thursday <br> 17:00-23:00</p>
-          <p>Friday - Sunday <br>  17:00-00:00</p>
+          <p>Tuesday - Thursday</p>
+          <p>17:00-23:00</p>
+          <p>Friday - Sunday </p>
+          <p>17:00-00:00</p>
         </div>
       </div>
       
@@ -102,7 +107,9 @@
             <use xlink:href="booking-img/sprite.svg#icon-map"></use>
           </svg>
           <h2>Location</h2>
-          <p>Stora Nygatan 12 <br> 111 27 Gamla Stan <br> Stockholm</p>
+          <p>Stora Nygatan 12</p>
+          <p>111 27 Gamla Stan</p>
+          <p>Stockholm</p>
         </div>
       </div>
 

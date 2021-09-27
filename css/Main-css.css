@@ -91,13 +91,8 @@ a:hover {
   list-style-type: none;
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
-.nav-list-home {
-  border-bottom: 2px solid var(--color-white);
-}
-
 .nav-list-link {
-  padding: 10px 20px 10px 15px;
+  padding: 10px 5px;
   font-size: 1.8rem;
   font-weight: 400;
 }

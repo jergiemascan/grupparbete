@@ -26,6 +26,8 @@ hr {
 .main-container {
   display: grid;
   grid-template-columns: 39% 22% 39%;
+  padding-top: 175px;
+  margin-top: 0;
 }
 
 .middle-container {
@@ -135,6 +137,10 @@ hr {
 
 .middle-container .item {
   min-height: 85px;
+}
+
+.middle-container h3 {
+  text-align: center;
 }
 
 .h4-persons {

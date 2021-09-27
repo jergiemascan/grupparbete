@@ -59,8 +59,10 @@ a:hover {
   font-weight: 400;
 }
 
-/********* Header styles*/
 
+
+
+/* ******** Header styles*/
 
 .nav-container {
   background-color: rgba(66, 64, 64, 0.842);
@@ -101,12 +103,31 @@ a:hover {
   font-size:1.8rem;
   font-weight:400;
 }
+.header-burger{
+grid-column: 11/-1;
+display: none;
+cursor: pointer;
+margin-right: 2rem;
 
+}
 .burger-btn {
   display: flex;
-  width: 5%;
-
+ justify-content: flex-end;
+  border: none;
+  background-color:none;
+  opacity: 100%;
+   
+}
+.burger-icon{
+  background-color: none;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  fill:var(--color-white);
+}
+.burger-x{
   display: none;
+  background-color: none;
 }
 
 .header-btn{
@@ -128,7 +149,7 @@ a:hover {
 .header-book-btn.btn{
   padding: 1.9rem 3.5rem;
 }
-
+ 
 
 /********** Footer styles*/
 
@@ -183,4 +204,24 @@ footer {
 }
 
 
-/* Mobile */
+/* Tablet */
+@media screen and (max-width:960px){
+  .nav-list{
+    display: none;
+  }
+  
+  .nav-container{
+    display:flex;
+    justify-content: space-between;
+        
+
+  }
+  .header-burger{
+    display: flex;
+    background-color: none;
+    align-items: center;
+  }
+  .burger-icon{
+    background-color:none;
+  }
+}

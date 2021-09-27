@@ -20,10 +20,10 @@
   --main-margin: 20px;
 
   /* colors */
+  --color-white: rgb(235, 235, 235);
   --footer-bg: rgba(179, 178, 178, 0.568);
   --border-color: rgba(179, 178, 178, 0.856);
-  --color-white: #fff;
-  --grey-light: #b1aeae;
+  --grey-light: #afaeae;
   --primary-color: #5e5d5d;
   --grey-dark: #777;
 
@@ -39,7 +39,7 @@ html {
 body {
   font-family: 'nunito', sans-serif;
   color: var(--primary-color);
-  background-color: rgba(237, 236, 232);
+  background-color: var(--color-white);
   font-weight: 300;
   line-height: 1.7;
 }

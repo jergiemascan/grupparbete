@@ -95,7 +95,7 @@ body{
   max-width:100%;
   height: 55vh;
   margin: 0 auto;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--primary-color);
   border-radius: 5px;
   background-color: #fff;
@@ -198,13 +198,11 @@ ul h4{
  margin-top: 2rem;
 }
 iframe{
+  padding: 0 1.5rem;
   width: 100%;
   height: 50vh;  
 }
 
-/****************************************/
-/*      REFACTORABLE CODE                */
-/* ************************************* */
 /* .clearfix,.clearfix::after{
   content: "";
   clear: both;
@@ -232,22 +230,19 @@ ul li, a {
   }
   .icons{
     height:5rem;
-    margin-bottom: 1rem;
   }
 }
 
 /* screen size max-width 720px */
 @media screen and (max-width:45em) {
   #booking{
-    left: 20%;
-    right: 20%;
+    left: 15%;
+    right: 15%;
   }
   .btn2{
-    font-size: 1.2rem;
     padding:1.4rem 3rem;
   }
   .book-form{
-    font-size: 1.2rem;
     padding: 1.5rem;
   } 
   #guest-option{
@@ -271,24 +266,65 @@ ul li, a {
   ul h4{
     margin: 0;
   }
-  
-  
+    
 }
 
+/* screen size 0-460 */
+@media screen and (max-width:28.5em){
+  .booking-reservation{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  #booking{
+    top: 30%;
+    left: 0%;
+    right: 0%;
+  }
+  .book-form{
+    border-radius:0;
+    width: 100%;
+    height: 60vh;
+    padding: 0;
+  }
+  .book-form h2, .contact-opening h2,
+  .contact-opening>*, 
+  .contact-opening p{
+    font-size: 1.6rem;
+    border-radius:0;
+  }
+  .contact-opening{
+    width: 100%;
+    padding: 2.5rem 0;
+  }
+  .btn2{
+    padding: 1.3rem 2.2rem;
+    border-radius: 0;
+  }
+  .btn2, label, input[class*="form-"],select, .num-guest{
+    font-size: 1.4rem;
+  }
+}
 
 /* Bigger desktop-Screen size min-1200px */
 @media screen and (min-width:75em) {
-   
+   #booking{
+     top: 25%;
+   }
+   .booking-reservation{
+    font-size: 3.5rem;
+   }
   .book-form h2{
     margin-bottom: 2rem;
     font-size: 2rem;
   }
   .book-form{
-    font-size: 1.4rem;
+    height: 60vh;
+    gap: 2rem;
   }
   iframe{
     height: 60vh;  
   }
+
 }
 
 

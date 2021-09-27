@@ -51,26 +51,20 @@ li,
 a {
   text-decoration: none;
   color: var(--color-white);
+  transition: .2s ease-in-out;
 }
 
 a:hover {
   color: var(--grey-light);
   font-weight: 400;
+  transition: .2s ease-in-out;
 }
 
 
 .header-container {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(../img/hero-2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+ top: 0;
   width: 100%;
-  position: fixed;
+  position: sticky;
 }
 
 
@@ -84,7 +78,7 @@ a:hover {
   grid-template-rows: 10vh;
   grid-template-columns: repeat(12, 1fr);
   padding: 1rem;
-  height: 150px;
+  
 }
 
 .logo-container {
@@ -95,7 +89,7 @@ a:hover {
 }
 
 .logo {
-  width: 80%;
+  width: 70%;
 }
 
 .nav-list {
@@ -127,12 +121,9 @@ margin-right: 2rem;
   display: flex;
  justify-content: flex-end;
   border: none;
-  background-color:none;
-  opacity: 100%;
    
 }
 .burger-icon{
-  background-color: none;
   width: 4rem;
   height: 4rem;
   border: none;
@@ -140,7 +131,6 @@ margin-right: 2rem;
 }
 .burger-x{
   display: none;
-  background-color: none;
 }
 /********** Footer styles*/
 
@@ -219,12 +209,9 @@ footer {
   }
   .header-burger{
     display: flex;
-    background-color: none;
     align-items: center;
   }
-  .burger-icon{
-    background-color:none;
-  }
+  
 }
 
 /* Mobile */

@@ -18,6 +18,10 @@ hr {
   margin: 25px auto;
 }
 
+.nav-list-menu {
+  border-bottom: 1px solid var(--color-white);
+} 
+
 .group-price {
   font-size: 17.5px;
   font-weight: bold;
@@ -26,10 +30,9 @@ hr {
 .main-container {
   display: grid;
   grid-template-columns: 39% 22% 39%;
-  padding-top: 175px;
-  margin-top: 0;
+  margin-top: 35px;
 }
-
+ 
 .middle-container {
   display: flex;
   flex-direction: column;
@@ -189,7 +192,7 @@ hr {
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
   .main-container {
     grid-template-columns: repeat(2, 1fr);
   }

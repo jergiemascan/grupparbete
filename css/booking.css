@@ -25,9 +25,12 @@ body{
   /* background-color: #f1f2f6c0; */
   background-color:rgba(237, 236, 232);
   font-weight: 400;
-  line-height: 1.7;
-  
+  line-height: 1.7; 
 }
+
+.nav-list-booking {
+  border-bottom: 1px solid var(--color-white);
+} 
 
 .header-container{
   background-image:linear-gradient(to right bottom, rgba(0,0,0, .1), rgba(0,0,0, .1)), url(../booking-img/hero-2.jpg);

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/Main-css.css" />
-    <link rel="stylesheet" href="css/Home-css.css" />
+    <link rel="stylesheet" href="css/main-css.css" />
+    <link rel="stylesheet" href="css/home-css.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -20,37 +20,81 @@
   <body>
     <header class="header-container">
       <nav class="nav-container">
+        
         <div class="logo-container">
           <a href="home-index.html"><img class="logo" src="img/Logo22.png" alt="weblogo"/></a>
         </div>
-
+        
         <ul class="nav-list">
           <li> <a class="nav-list-link nav-list-home" href="home-index.html">HOME</a></li>
           <li><a class="nav-list-link" href="menu.html">MENU</a></li>
           <li><a class="nav-list-link" href="gallery.html">GALLERY</a></li>
           <li><a class="nav-list-link" href="booking.html">BOOKING</a></li>
-        </ul>
-
-        <button class="burger-btn">
-          <svg class="burger-open">
-            <use xlink:href="img/sprite.svg#icon-menu"></use>
-          </svg>
-          <svg class="burger-open">
-            <use xlink:href="img/sprite.svg#icon-x"></use>
-          </svg>
-        </button>
+        </ul>       
+        <div class="header-burger">
+          <div class="burger-btn">
+            <svg class="burger-icon burger-open">
+              <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
+            <svg class="burger-icon burger-x">
+              <use xlink:href="img/sprite.svg#icon-x"></use>
+            </svg>
+          </div>
+        </div>
       </nav>
     </header>
     
-    <div class="main-container">
+    
+    <div id="background-container">
+     
+<div id="link-container">
+     <a href="menu.html"><button type="button">MENU</button></a>
+     <a href="booking.html"><button type="button">BOOKING</button></a>
     </div>
+  </div>
+  <div class="main-container">
+      <article class="article1">
+        <h2>About us</h2>
+        <p>Io mangio, meaning "i eat" in Italian, is a family owned restaurant in the heart of Stockholm. 
+        In the midst of the financial crisis of the late 90's, founder
+          Generic di Genericnàmo wanted to bring joy to the residents of Stockholm and started Io Mangio togheter with his wife Non Parlé Italiano.
+          Generic is educated in Palermo and has, in his food journey, perfected recipes from Milan in the north, to Naples in the south.
+          In late 2000 Generic and Non Parlé invested in a wineyard in Bologna to create a delicious wine that you can drink togheter with our extraordinary menu, please ask the waiter for a wine and food recommendation. </p>
+         </article>
+<article class="article2">
+
+  <H2>This Weeks Specials</H2>
+
+  <h3>Pappardelle al Ragù</h3>
+  <p>Chuckroll ragout, red wine, garlic,herbs & pecorino</p>
+
+  <h3>Marinata di Tonno</h3>
+  <p>Marinated tuna, prima ricotta, lemon confit, olive oil,
+    blackpepper & hazelnut</p>
+
+   <h3>Saltimbocca alla Io Mangio</h3>
+   <p>Veal ribeye, prosciutto, pearl onion, sage & marsal</p>
+    </article>
+</div>
+
+<div class="container-recommended">
+<h2>Recommended by</h2>
+<div class="recommended-logo">
+<a href="https://google.com"><img src="img/Google-logo.jpg" alt="Image of google logo"></a>
+<a href="https://tripadvisor.com"><img src="img/Tripadvisor-logo.png" alt="Image of Tripadvisor logo"></a>
+<a href="https://thefork.com"><img src="img/Thefork-logo.png" alt="Image of The Fork logo"></a>
+<a href="https://bokabord.se"><img src="img/Bokabord-logo.jpg" alt="Image of Bokabord logo"></a>
+</div>
+</div>
+
+
 
     <footer>
       <div id="footer-logo">
-      <a href="#"><img src="img/Logo22.png" alt="Picture of Io Mangio logo"></a>
+        <a href="#"><img src="img/Logo22.png" alt="Picture of Io Mangio logo"></a>
       </div>
       <div id="footer-flex">
-        <div class="footer-box">
+        <div id="footer-box1" class="footer-box">
           <h4 class="footer-title">Io Mangio</h4>
           <p>Stora Nygatan 12</p>
           <p>111 27 STOCKHOLM</p>
@@ -62,15 +106,14 @@
           <p>E-mail: info@iomangio.com</p>
         </div>
 
-        <div class="footer-box" id="footer-box3">
-
-          <h4 class="footer-title">Follow us on our social media</h4>
-          <div>
-          <a href="#"><img class="footer-social" src="img/Facebook-Logo.png" alt="picture of facebook logo" /></a>
-          <a href="#"><img class="footer-social" src="img/Instagram-Logo.png" alt="picture of instagram logo" /></a>          
-        </div>
+      <div class="footer-box" id="footer-socials">
+        <h4 class="footer-title">Follow us on social media</h4>
+      	<div class="footer-box3">
+      	  <a class ="footer-social1" href="#"><img src="img/Facebook-Logo.png" alt="picture of facebook logo" /></a>
+      	  <a class="footer-social2" href="#"><img src="img/Instagram-Logo.png" alt="picture of instagram logo" /></a>
+      	</div>
+    	</div>
       </div>
     </footer>
-
   </body>
 </html>

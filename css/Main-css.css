@@ -6,14 +6,6 @@
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  /* box-sizing: inherit; */
-}
-
 :root {
   /* Spacing */
   --main-padding: 20px;
@@ -73,7 +65,6 @@ a:hover {
 .nav-container {
   background-color: rgba(66, 64, 64, 0.842);
   color: var(--color-white);
-  font-size: 1.6rem;
   display: grid;
   grid-template-rows: 10vh;
   grid-template-columns: repeat(12, 1fr);
@@ -110,28 +101,7 @@ a:hover {
   font-size: 1.8rem;
   font-weight: 400;
 }
-.header-burger{
-grid-column: 11/-1;
-display: none;
-cursor: pointer;
-margin-right: 2rem;
 
-}
-.burger-btn {
-  display: flex;
- justify-content: flex-end;
-  border: none;
-   
-}
-.burger-icon{
-  width: 4rem;
-  height: 4rem;
-  border: none;
-  fill:var(--color-white);
-}
-.burger-x{
-  display: none;
-}
 /********** Footer styles*/
 
 footer {
@@ -197,22 +167,14 @@ footer {
 }
 /* Tablet */
 @media screen and (max-width:960px){
-  .nav-list{
-    display: none;
+  .nav-list {
+    grid-column: 7/11;
   }
-  
-  .nav-container{
-    display:flex;
-    justify-content: space-between;
-        
 
+  .nav-list a{
+    font-size: 1.4rem;
   }
-  .header-burger{
-    display: flex;
-    align-items: center;
-  }
-  
-}
+
 
 /* Mobile */
 @media screen and (max-width: 768px) {
@@ -229,6 +191,15 @@ footer {
   .footer-box3 img {
     width: 30px;
   }
+  .nav-list {
+    grid-column: 1/8;
+  }
+  .nav-list a{
+    font-size: 1.2rem;    
+  }
+  .logo-container {
+    display:none;
+  }
 }
 
 /* MINI-Mobile */
@@ -236,4 +207,8 @@ footer {
   .footer-box3 {
     flex-direction: column;
   }
+  .nav-list a{
+    font-size: 1rem;
+  }
+}
 }

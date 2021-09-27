@@ -139,6 +139,10 @@ hr {
   min-height: 85px;
 }
 
+.middle-container h3 {
+  text-align: center;
+}
+
 .h4-persons {
   padding-top: 15px;
 }

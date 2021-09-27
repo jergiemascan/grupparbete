@@ -165,6 +165,7 @@ footer {
 
 .footer-box {
   padding-bottom: var(--main-padding);
+  margin-top: var(--main-margin);
   width: 30%;
   height: 120px;
 }
@@ -225,7 +226,7 @@ footer {
     background-color:none;
   }
 }
-=======
+
 /* Mobile */
 @media screen and (max-width: 768px) {
   #footer-logo img {

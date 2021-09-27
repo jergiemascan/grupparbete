@@ -4,7 +4,7 @@
   --grey-light:#f7f7f7;
   --primary-color:#5e5d5d;
   --grey-dark:#777;
-  --btn-orange:#e67e22;
+  --orange:#e67e22;
 }
 
 *,
@@ -21,13 +21,12 @@ html{
 body{
   font-family: Nunito, sans-serif;
   color:var(--primary-color);
-  /* background-color: #f1f2f6; */
-  /* background-color: #f1f2f6c0; */
   background-color:rgba(237, 236, 232);
   font-weight: 400;
   line-height: 1.7;
   
 }
+
 
 .header-container{
   background-image:linear-gradient(to right bottom, rgba(0,0,0, .1), rgba(0,0,0, .1)), url(../booking-img/hero-2.jpg);
@@ -51,7 +50,7 @@ body{
   border: none;
   border-radius: 10rem;
   padding:1.4rem 3.5rem;
-  background-color:#e67e22;
+  background-color:var(--orange);
   letter-spacing: 1.2px;
   transition: all .3s;
   cursor: pointer;
@@ -88,7 +87,7 @@ body{
 .booking-reservation span{
   width: 10rem;
   margin-bottom:2rem;
-  border-bottom: 3px solid var(--btn-orange);
+  border-bottom: 3px solid var(--orange);
 } 
 
 .book-form{
@@ -98,7 +97,7 @@ body{
   font-size: 1.4rem;
   color: var(--primary-color);
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--color-white);
   
   display: flex;
   flex-direction: column;
@@ -117,11 +116,10 @@ body{
   letter-spacing: .5px;
 }
  
-label, input[class*="form-"],select{
+label, input[class*="form-"],select, .num-guest{
   font-family: inherit;
-  font-size: inherit;
+  font-size:1.4rem;
   padding: .5rem;
-  
  
 }
 #guest-option{
@@ -152,7 +150,7 @@ label, input[class*="form-"],select{
 }
 
 .contact-opening>*, .contact-opening p{
-  background-color: #fff;
+  background-color: var(--color-white);
   font-size: 1.4rem;
   border-radius: 5px;
 }
@@ -180,7 +178,7 @@ label, input[class*="form-"],select{
 .icons{
   width:3rem;
   height: 8rem;
-  fill: #cb7152;
+  fill:var(--orange);
 }
 .contact-opening h2{
   font-size: 1.6rem;
@@ -190,7 +188,12 @@ label, input[class*="form-"],select{
 ul h4{
   margin: 1.5rem 0 .5rem 0;
 }
-
+ul li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit; 
+ 
+ }
 /****************************************/
 /*              MAP                      */
 /* ************************************* */
@@ -203,26 +206,14 @@ iframe{
   height: 50vh;  
 }
 
-/* .clearfix,.clearfix::after{
-  content: "";
-  clear: both;
-  display: row;
-} */
-
-
-ul li, a {
-  list-style-type: none;
-  text-decoration: none;
-  color: inherit; 
  
- } 
 
 /****************************************/
 /*            QUERIES                        */
 /* ************************************* */
 
 
-/* screen size max960px */
+/* screen size max-960px */
 @media screen and (max-width:60em) {
   .contact-opening{
     min-height:45rem;
@@ -269,7 +260,7 @@ ul li, a {
     
 }
 
-/* screen size 0-460 */
+/* screen size 0-460px */
 @media screen and (max-width:28.5em){
   .booking-reservation{
     font-size: 2rem;
@@ -300,12 +291,10 @@ ul li, a {
     padding: 1.3rem 2.2rem;
     border-radius: 0;
   }
-  .btn2, label, input[class*="form-"],select, .num-guest{
-    font-size: 1.4rem;
-  }
-}
+ }
 
-/* Bigger desktop-Screen size min-1200px */
+
+/* Bigger desktop-Screen size Min-1200px */
 @media screen and (min-width:75em) {
    #booking{
      top: 25%;

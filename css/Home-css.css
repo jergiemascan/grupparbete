@@ -70,12 +70,17 @@ h2{
     text-align: center;
 }
 
+hr{
+  color: rgba(179, 178, 178, 0.856);
+  margin: 50px;
+}
+
 .container-recommended{
    display:flex;
-    padding: 100px auto;
     width: 100%;
     justify-content: center;
     align-items: center;
+margin-bottom: 40px;
 }
 [class*="recommended-logo"] img{
     height: 110px;

@@ -171,6 +171,7 @@ footer {
   .nav-list a{
     font-size: 1.4rem;
   }
+  
   .nav-container {
     grid-template-rows: 9vh;
     padding-bottom: 0.5rem;
@@ -178,6 +179,7 @@ footer {
   .logo-container img {
     width: 110px;
   }
+}
 
 /* Mobile */
 
@@ -209,6 +211,13 @@ footer {
     grid-template-rows: 7vh;
     padding-bottom: 0.2rem;
   }
+  footer p {
+    font-size: 1.25rem;
+  }
+  .footer-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  }
 }
 
 /* MINI-Mobile */
@@ -219,5 +228,4 @@ footer {
   .nav-list a{
     font-size: 1rem;
   }
-}
 }

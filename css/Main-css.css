@@ -163,7 +163,7 @@ footer {
 /* Tablet */
 
 
-@media screen and (max-width:960px){
+@media screen and (max-width:959px){
   .nav-list {
     grid-column: 8/10;
   }
@@ -184,7 +184,7 @@ footer {
 /* Mobile */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #footer-logo img {
     width:120px;
   }

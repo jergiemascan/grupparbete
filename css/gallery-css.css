@@ -23,7 +23,7 @@
     display:grid;
     grid-template-columns:repeat(12, 1fr);
     grid-template-rows:auto;
-    gap:6rem;
+    gap:4rem;
 }
 
 .gallery-section{
@@ -50,11 +50,11 @@ p{
 }
 
 #section-1 img{
-    width:calc(60% - 3rem);
+    width:calc(60% - 2rem);
 }
 
 #section-1 div{
-    width:calc(40% - 3rem);
+    width:calc(40% - 2rem);
     
 }
 
@@ -63,7 +63,7 @@ p{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:6rem;
+    gap:4rem;
 }
 
 .hover-effect{
@@ -73,9 +73,9 @@ p{
 .hover-effect div{
     position:absolute;
     bottom:10px;
-    left:15px;
     background:rgba(255, 255, 255, 0.822);
     border-radius:1rem;
+    text-align: center;
     display:none;
 }
 
@@ -120,16 +120,16 @@ main img{
 
 #section-5{
     display:flex;
-    gap:6rem;
+    gap:4rem;
 }
 
 #section-5 img{
-    width:calc(50% - 3rem);
+    width:calc(50% - 2rem);
 }
 
 
 /*Tablets*/
-@media only screen and (max-width:960px) {
+@media only screen and (max-width:959px) {
     h1{
         font-size:3rem;
     }
@@ -139,6 +139,7 @@ main img{
     }
 
     #main-content{
+        padding-top:15vh;
         padding-bottom:6rem;
     }
 
@@ -184,7 +185,11 @@ main img{
 }
 
 /*Phone*/
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
+    #main-content{
+        padding-top:10vh;
+    }
+
     #section-1,
     #section-5{
         flex-direction:column;

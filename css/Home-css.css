@@ -1,4 +1,6 @@
-
+:root{
+    --transition: 0.5s ease-in-out;
+}
 #background-container{
     background-image: url("../img/Background-Image.jpg");
     background-repeat: no-repeat;
@@ -26,14 +28,14 @@ button{
     border: 0;
     height: 50px;
     width: 120px;
-    transition: 0.5s ease-in-out;
+    transition: var(--transition);
     border-radius: 10px;
     cursor: pointer;
 }
 
 button:hover{
     background-color: rgba(66, 64, 64, 0.842);
-    transition: 0.5s ease-in-out;
+    transition: var(--transition)
 }
 
 .nav-list-home {
@@ -71,7 +73,7 @@ h2{
 }
 
 hr{
-  color: rgba(179, 178, 178, 0.856);
+  color: var(--border-color);
   margin: 50px;
 }
 
@@ -85,11 +87,11 @@ margin-bottom: 40px;
 [class*="recommended-logo"] img{
     height: 110px;
     padding: 20px;
-    transition: 0.5s ease-in-out;
+    transition: var(--transition);
 }
 
 [class*="recommended-logo"] img:hover{
-    transition: 0.5s ease-in-out;
+    transition: var(--transition);
     transform: scale(1.06);
 }
 
